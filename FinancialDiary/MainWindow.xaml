@@ -10,7 +10,6 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <!-- Форма для ввода -->
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
             <TextBlock Text="Описание:" Margin="0,0,3,0"/>
             <TextBox x:Name="txtDescription" Width="120" Margin="0,0,5,0"/>
@@ -32,7 +31,6 @@
             <Button Content="Добавить" Width="80" Click="AddEntry_Click"/>
         </StackPanel>
 
-        <!-- Фильтры -->
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,10">
             <TextBlock Text="Фильтрация:" VerticalAlignment="Center" Margin="0,0,5,0"/>
             <ComboBox x:Name="cmbFilterCategory" Width="120" SelectionChanged="ApplyFilters" Margin="0,0,5,0"/>
@@ -46,14 +44,12 @@
             <Button Content="Лимиты" Width="80" Click="EditLimits_Click" Margin="0,0,5,0"/>
         </StackPanel>
 
-        <!-- Список записей -->
         <ListBox Grid.Row="2" x:Name="lstEntries" Margin="0,0,0,10"/>
 
-        <!-- Баланс + цель -->
         <StackPanel Grid.Row="3" Orientation="Vertical" HorizontalAlignment="Right">
             <TextBlock x:Name="txtBalance" FontSize="16" FontWeight="Bold"/>
             <TextBlock x:Name="txtGoalProgress" FontSize="14"/>
-            <TextBlock x:Name="txtLimitWarning" Foreground="Red" FontStyle="Italic"/>
+            <TextBlock x:Name="txtLimitWarning" Foreground="Red" FontWeight="Bold"/>
         </StackPanel>
     </Grid>
 </Window>

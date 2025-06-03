@@ -17,7 +17,7 @@ namespace FinancialDiary
             ["Прочее"] = 300
         };
 
-        private decimal financialGoal = 10000;
+        private decimal financialGoal = 100000;
         private decimal currentSavings = 0;
 
         public MainWindow()
