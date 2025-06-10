@@ -84,6 +84,7 @@ namespace FinancialDiary
             txtDescription.Clear();
             txtAmount.Clear();
 
+
             if (type == "Расход" && category != null)
             {
                 CheckLimit(category, amount);
@@ -181,7 +182,7 @@ namespace FinancialDiary
         {
             var editWindow = new LimitEditWindow(categoryLimits);
             if (editWindow.ShowDialog() == true)
-            {
+            {       
                 categoryLimits = editWindow.UpdatedLimits;
                 MessageBox.Show("Лимиты успешно обновлены.");
             }
